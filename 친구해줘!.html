@@ -1,0 +1,326 @@
+﻿모연우와 친구가 되어보세요 (시크릿 엔딩 존재)
+
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>모연우와 친구되기</title>
+<style>
+
+#endText {
+  white-space: pre-line;
+  line-height: 2;
+  text-align: left;
+  word-break: keep-all;
+  padding: 12px 8px;
+}
+
+#endNote {
+  white-space: pre-line;
+  line-height: 1.9;
+  text-align: center;
+}
+
+:root{--yellow:#ffdf69;--pale:#fff8df;--cream:#fffdf4;--purple:#a98adb;--deep:#6e587f;--ink:#70552d;--line:#ead38a}
+*{box-sizing:border-box} body{margin:0;background:#fff8df;color:var(--ink);font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+button,input{font:inherit} .wrap{max-width:760px;min-height:100vh;margin:auto;background:var(--cream);box-shadow:0 0 35px #8c6b2514}
+header{background:var(--yellow);padding:24px 20px 18px;text-align:center;border-bottom:4px dotted #e9c45a}
+.kicker{font-size:12px;letter-spacing:2px;font-weight:800;color:#8a6b32}.logo{font-size:clamp(28px,6vw,42px);font-weight:950;letter-spacing:-2px;margin:8px 0;color:#725327}.subtitle{font-size:13px;color:#8c7040}
+main{padding:22px 20px 34px}.panel{background:#fff9e8;border:1px solid var(--line);border-radius:20px;padding:20px;margin:14px 0;box-shadow:0 5px 0 #f5e8bd}
+.school{height:180px;border-radius:17px;overflow:hidden;position:relative;background:linear-gradient(180deg,#c9e6f2 0 58%,#f5df9e 58% 64%,#a9c98c 64%);margin-bottom:18px}
+.school:before{content:"";position:absolute;left:12%;right:12%;bottom:27px;height:95px;background:#f8e8c5;border:5px solid #fff6dd;border-bottom:0;clip-path:polygon(0 22%,50% 0,100% 22%,100% 100%,0 100%)}
+.school:after{content:"";position:absolute;left:23%;right:23%;bottom:27px;height:56px;background:repeating-linear-gradient(90deg,#a8c5d3 0 38px,#f8e8c5 38px 52px);border-top:8px solid #d4b77d}
+.sun{position:absolute;right:12%;top:20px;width:43px;height:43px;background:#ffe27b;border-radius:50%;box-shadow:0 0 0 10px #ffe27b33}
+.school-label{position:absolute;z-index:2;bottom:6px;width:100%;text-align:center;font-size:11px;color:#6c805b;font-weight:800}
+h2{font-size:21px;margin:0 0 10px;color:var(--deep)}p{line-height:1.8;margin:8px 0}.muted{color:#9b865e;font-size:13px}.field{display:block;width:100%;padding:14px;border:2px solid #eadcae;border-radius:12px;background:white;color:var(--ink);outline:none}.field:focus{border-color:var(--purple)}
+.btn{border:0;border-radius:13px;padding:14px 17px;font-weight:800;cursor:pointer;background:var(--yellow);color:#725327;box-shadow:0 4px 0 #e8c65d;width:100%;transition:.12s}.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #e8c65d}.btn.purple{background:var(--purple);color:white;box-shadow:0 4px 0 #8e70c0}.btn:disabled{opacity:.5;cursor:not-allowed}
+.topline{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:12px;font-weight:800;color:#96783e}.tag{background:#f0e8fa;color:#80629d;padding:6px 10px;border-radius:99px}
+.dialogue{background:#f1eafa;border:1px solid #dfd0ef;border-radius:17px;padding:17px;margin:14px 0}.speaker{font-weight:900;color:#8767a5;margin-bottom:7px}.choices{display:grid;gap:10px;margin-top:16px}.choice{width:100%;text-align:left;border:1px solid var(--line);background:#fff4c9;border-radius:13px;padding:14px;color:#70552d;cursor:pointer;line-height:1.5}.choice:hover{border-color:var(--purple);background:#f5effb}.choice:disabled{opacity:.55;cursor:default}
+.status{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:white;border:1px solid #eee2c0;border-radius:12px;padding:11px;font-size:13px}.bar{height:8px;background:#eee5d1;border-radius:9px;overflow:hidden;margin-top:7px}.fill{height:100%;background:var(--purple);width:0;transition:width .2s}
+.notice{background:#fff0bd;border-left:4px solid var(--purple);padding:12px 14px;border-radius:8px;font-size:13px;line-height:1.7}.hidden{display:none!important}.end{text-align:center;padding:25px 15px}.end .emoji{font-size:46px}.footer{text-align:center;font-size:11px;color:#a58b5d;padding:14px}
+@media(max-width:480px){main{padding:16px 13px 28px}.panel{padding:16px}.school{height:150px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="kicker">✿ MY LITTLE FRIENDSHIP STORY ✿</div><div class="logo">모연우와 친구되기</div><div class="subtitle">이 이야기를 먼작고 아이들에게 바칩니다.</div></header>
+<main>
+<section id="start">
+  <div class="school"><div class="sun"></div><div class="school-label">먼작 고등학교 · 1학년 교실</div></div>
+  <div class="panel">
+    <h2>전학 첫날, 이름을 알려주세요!</h2>
+    <p>새 학기가 시작된 어느 봄날. 당신은 오늘부터 이 학교에서 생활하게 되었다.</p>
+    <p>교실 문을 열기 전, 출석부에 이름을 적는다.</p>
+    <label for="playerName" class="muted">플레이어 이름 (시작 후 변경할 수 없습니다)</label>
+    <input id="playerName" class="field" maxlength="12" autocomplete="off" placeholder="이름을 입력하세요">
+    <p class="muted">※ 이 이야기는 단 한 번의 기회로 진행됩니다. 선택을 되돌릴 수 없어요.</p>
+    <button id="begin" class="btn">이 이름으로 시작하기 ✿</button>
+  </div>
+</section>
+<section id="game" class="hidden">
+  <div class="topline"><span id="day">DAY 01 · 월요일</span><span class="tag">🏫 1학년 교실</span></div>
+  <div class="panel">
+    <div class="status">
+      <div class="stat">💜 모연우와의 친밀도 <b id="affinity">0</b><div class="bar"><div id="affinityBar" class="fill"></div></div></div>
+      <div class="stat">🌼 용기 <b id="bravery">0</b><div class="bar"><div id="braveryBar" class="fill"></div></div></div>
+    </div>
+  </div>
+  <div class="school"><div class="sun"></div><div class="school-label" id="place">1학년 3반 교실</div></div>
+  <div class="panel">
+    <h2 id="sceneTitle">처음 마주친 아이</h2>
+    <p id="narration"></p>
+    <div class="dialogue"><div class="speaker" id="speaker">모연우</div><p id="line"></p></div>
+    <div class="muted">어떻게 할까?</div>
+    <div id="choices" class="choices"></div>
+    <div id="feedback" class="notice hidden"></div>
+    <button id="next" class="btn purple hidden" style="margin-top:14px">다음으로 →</button>
+  </div>
+</section>
+<section id="ending" class="hidden">
+  <div class="panel end"><div class="emoji" id="endEmoji">🌻</div><h2 id="endTitle">우리, 친구가 된 걸까?</h2><p id="endText"></p><div class="notice" id="endNote"></div>
+  <button id="replay" class="btn" style="margin-top:18px">다른 선택으로 다시 플레이하기 ↻</button>
+  </div>
+</section>
+<div class="footer">🌼 YELLOW DAYS, PURPLE MEMORIES · 모연우와 친구되기</div>
+</main></div>
+<script>
+/* === GAME DATA: 대사와 선택지는 이 부분에서 수정하세요. === */
+const scenes=[
+ {day:"DAY 01 · 월요일",place:"1학년 3반 교실",title:"처음 마주친 아이",
+ narration:"새 학기 첫날. 담임 선생님이 당신을 교실 앞에 세웠다. 어색한 시선들이 쏟아지는 가운데, 창가 쪽에 앉은 한 아이와 눈이 마주쳤다. ",line:"안녕. 너 오늘 전학 온 애지? 나는 모연우야.",choices:[
+  {text:"반가워! 친해지자. 먼저 인사하고 싶었어.",a:3,b:2,reply:"오, 먼저 인사해 주는구나? 반가워. 잘 부탁해."},
+  {text:"응, 잘 부탁해. 혹시 여기 앉아도 돼?",a:2,b:1,reply:"당연하지. 내 옆자리 비어 있어."},
+  {text:"너 키 더럽게 크다.",a:0,b:0,reply:"... 그런 말 많이 들어."}
+ ]},
+ {day:"DAY 02 · 화요일",place:"학교 매점",title:"점심시간의 작은 용기",narration:"점심시간. 매점 앞에서 모연우를 다시 만났다. 연우는 양손에 간식을 들고 무엇을 살지 고민하고 있다.",line:"어, 너도 매점 왔어? 이 과자 맛있던데. 먹어봤어?",choices:[
+  {text:"아직! 네가 맛있다고 하면 나도 먹어볼래.",a:3,b:2,reply:"그럼 이걸로 추천할게. 실패해도 내 탓하기 없기다?"},
+  {text:"같이 먹자. 내가 음료수 살게!",a:3,b:3,reply:"오, 완전 좋은데? 고마워. 너 짱."},
+  {text:"나는 괜찮아. 너나 먹어라!",a:0,b:0,reply:"그래, 맛있는 점심 먹어라."}
+ ]},
+ {day:"DAY 03 · 수요일",place:"방과 후 교실",title:"같이 찾는 마음",narration:"종례가 끝난 교실. 모연우가 책상 서랍을 뒤적이며 곤란한 표정을 짓고 있다.",line:"큰일이네. 아끼는 키링을 잃어버렸어. 혹시 같이 찾아줄 수 있어?",choices:[
+  {text:"당연하지! 마지막으로 본 곳이 어디야?",a:4,b:2,reply:"고마워. 너랑 같이 찾으니까 금방 찾을 것 같아."},
+  {text:"내가 교실 뒤쪽을 찾아볼게!",a:3,b:3,reply:"든든하다... 나는 창가 쪽을 볼게."},
+  {text:"미안, 너 혼자 찾아라.",a:1,b:0,reply:"아냐, 내가 잃어버린건데 뭘. 조심히 가라."}
+ ]},
+ {day:"DAY 04 · 금요일",place:"학교 운동장",title:"우리 사이의 이름",narration:"일주일이 흘렀다. 하교 종이 울리고, 운동장에는 노을이 길게 드리운다. 모연우가 당신의 옆에 나란히 선다.",line:"이번 주 너랑 지내서 재밌었어. 다음 주에도 같이 다닐래?",choices:[
+  {text:"좋아! 이제 우리 친구 맞지?",a:5,b:2,reply:"당연하지. 우리 친구잖아. 다음 주에도 잘 부탁해."},
+  {text:"응. 다음엔 내가 재밌는 곳 알려줄게.",a:4,b:3,reply:"오, 기대할게. 약속이다?"},
+  {text:"나도 즐거웠어. 먼저 말 걸어줘서 고마워.",a:4,b:1,reply:"나야말로 고맙지. 앞으로도 잘 지내보자."}
+ ]}
+];
+/* === END GAME DATA === */
+const $=id=>document.getElementById(id);
+const KEY="mo_yeonwoo_friendship_v1";
+let state={
+  name:"",
+  index:0,
+  affinity:0,
+  bravery:0,
+  locked:false,
+  secretChosen:false,
+  loverEndingChosen:false
+};
+function save(){localStorage.setItem(KEY,JSON.stringify(state))}
+function show(id){$(id).classList.remove("hidden")}
+function hide(id){$(id).classList.add("hidden")}
+function updateStats(){$("affinity").textContent=state.affinity;$("bravery").textContent=state.bravery;$("affinityBar").style.width=Math.min(100,state.affinity/15*100)+"%";$("braveryBar").style.width=Math.min(100,state.bravery/10*100)+"%"}
+
+function render(){
+  if(state.index>=scenes.length){
+    finish();
+    return;
+  }
+
+  const s=scenes[state.index];
+
+  $("day").textContent=s.day;
+  $("place").textContent=s.place;
+  $("sceneTitle").textContent=s.title;
+  $("narration").textContent=s.narration;
+  $("line").textContent=s.line;
+  $("speaker").textContent="모연우";
+
+  $("choices").innerHTML="";
+  hide("feedback");
+  hide("next");
+
+  s.choices.forEach((c,i)=>{
+    const b=document.createElement("button");
+    b.className="choice";
+    b.textContent=(i+1)+". "+c.text;
+    b.onclick=()=>choose(c);
+    $("choices").appendChild(b);
+  });
+
+  // 첫째 날 문태언 전용 비밀 선택지
+  if(state.name==="문태언" && state.index===0){
+    const secretChoice={
+      text:"사실 너를 위해 준비한 게 있어. 🎁",
+      a:100,
+      b:100,
+      reply:"아직은 비밀이야. 마지막 날에 알려줄게!",
+      secret:true
+    };
+
+    const b=document.createElement("button");
+    b.className="choice";
+    b.textContent="✉ "+secretChoice.text;
+    b.onclick=()=>choose(secretChoice);
+    $("choices").appendChild(b);
+  }
+
+  // 마지막 날 문태언 전용 연인 선택지
+  if(
+    state.name==="문태언" &&
+    state.index===scenes.length-1 &&
+    state.secretChosen
+  ){
+    const loverChoice={
+      text:"바보 똥개 모연우.",
+      a:0,
+      b:0,
+      reply:"모연우는 당신의 손을 꼭 잡았다.",
+      loverEnding:true
+    };
+
+    const b=document.createElement("button");
+    b.className="choice";
+    b.textContent="💜 "+loverChoice.text;
+    b.onclick=()=>choose(loverChoice);
+    $("choices").appendChild(b);
+  }
+
+  updateStats();
+}
+  
+function choose(c){
+
+  [...$("choices").querySelectorAll("button")]
+    .forEach(b=>b.disabled=true);
+
+  state.affinity+=c.a;
+  state.bravery+=c.b;
+
+  // 특별한 선택지를 골랐는지 기록
+  if(c.secret){
+    state.secretChosen=true;
+  }
+if(c.loverEnding){
+  state.loverEndingChosen=true;
+}
+  save();
+  updateStats();
+
+  // 특별한 선택지를 골랐다면 편지와 선물은 아직 공개하지 않음
+  if(c.secret){
+    $("feedback").textContent=
+      "... 아직은 비밀이야. 마지막 날까지 기다려줄래?";
+  }else{
+    $("feedback").textContent=c.reply;
+  }
+
+  show("feedback");
+  show("next");
+  $("next").focus();
+}
+$("next").onclick=()=>{state.index++;save();render()};
+$("replay").onclick=()=>{
+ localStorage.removeItem(KEY);
+ state={
+  name:"",
+  index:0,
+  affinity:0,
+  bravery:0,
+  locked:false,
+  secretChosen:false,
+  loverEndingChosen:false
+};
+ $("playerName").value="";
+ hide("ending");hide("game");show("start");
+};
+$("begin").onclick=()=>{
+ const n=$("playerName").value.trim();if(!n){$("playerName").focus();return}
+ state={
+  name:n,
+  index:0,
+  affinity:0,
+  bravery:0,
+  locked:false,
+  secretChosen:false,
+  loverEndingChosen:false
+};
+ save();
+ hide("start");hide("ending");show("game");
+ if(n==="문태언"){alert("✉ 특별한 이름이 출석부에 적혔습니다.");}
+ render();
+};
+
+function finish(){
+  hide("game");
+  show("ending");
+
+  let title, txt, emoji, note;
+
+  if(state.affinity >= 12){
+    title = "우리, 제법 친해졌네!";
+    txt = "모연우는 당신에게 손을 내밀었다. “내일도 같이 대화하자. 이제 우리 꽤 친한 친구잖아.”";
+    emoji = "💜";
+    note = "BEST FRIEND ENDING · 모연우와 단짝이 되었습니다.";
+  }
+  else if(state.affinity >= 7){
+    title = "기분 좋은 친구 사이";
+    txt = "모연우가 환하게 웃었다. “앞으로 더 많이 얘기하자. 잘 부탁해.”";
+    emoji = "🌼";
+    note = "FRIEND ENDING · 이제 막 우정이 시작되었습니다.";
+  }
+  else{
+    title = "아직은 알아가는 중";
+    txt = "모연우는 작게 손을 흔들었다. “다음에 또 보자!” 아직 어색하지만, 다음 기회가 있다면 더 친해질 수 있을지도.";
+    emoji = "☁️";
+    note = "ACQUAINTANCE ENDING · 인연의 시작입니다.";
+  }
+
+  // 문태언 전용 시크릿 엔딩
+if(state.name === "문태언" && state.loverEndingChosen){
+    title = "너에게만 준비한 비밀";
+
+    txt = `
+
+태언아, 안녕. 나 연우야.
+이 게임에 네 이름을 적고 들어와 줘서 고마워.
+
+사실 이 이야기는 너를 깜짝 놀라게 해주고 싶어서 준비했어.
+너와 많은 일이 있었고, 앞으로도 우여곡절이 많을지도 모르지만
+난 그럼에도 널 여전히 아끼고 많이 좋아할 거야.
+처음에 말했듯 서로가 서로를 선택함으로써
+서로가 서로를 최선을 다해 사랑하자.
+
+앞으로도 별것 아닌 이야기로 같이 웃고,
+서로에게 힘이 되어 주는 사이로 오래 지내고 싶어.
+
+서툰 선물이고, 하찮은 편지지만
+네가 기뻐해줬으면 좋겠다고 생각하면서 이 글을 써봐.
+
+오늘도 네 하루에 작은 행운이 있기를!
+많이 좋아하고 사랑해.
+
+- 연우가.`;
+
+    emoji = "💌";
+    note = "🎁 특별한 선물! 많이 사랑해.\n\nSECRET GIFT ENDING";
+  }
+
+  // 엔딩 문구를 실제 화면에 출력
+  $("endTitle").textContent = title;
+  $("endText").textContent = txt;
+  $("endEmoji").textContent = emoji;
+  $("endNote").textContent = note;
+}
+(function init(){
+ const saved=localStorage.getItem(KEY);
+ if(saved){try{state=JSON.parse(saved);hide("start");if(state.index>=scenes.length)finish();else show("game"),render()}catch(e){console.error(e)}}
+})();
+</script>
+</body></html>
